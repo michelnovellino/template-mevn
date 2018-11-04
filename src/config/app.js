@@ -16,5 +16,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname,'public')));
 
+console.log(express.static(path.join(__dirname,'public')))
+
 module.exports = app;
 
