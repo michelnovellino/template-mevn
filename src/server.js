@@ -48,6 +48,8 @@ app.use(express.static(path.join(__dirname,'public')));
 
 
 const itemRoute = require('./routes/Item');
+const taskRoute = require('./routes/Item');
+app.use('/task',taskRoute);
 app.use('/item',itemRoute);
 
 //static files
