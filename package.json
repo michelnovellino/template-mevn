@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/server.js",
-    "build": "webpack --mode development",
+    "build": "webpack --mode development --watch",
     "dev": "nodemon src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,6 +16,7 @@
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
     "express": "^4.16.4",
+    "materialize-css": "^1.0.0-rc.2",
     "mongoose": "^5.3.6",
     "morgan": "^1.9.1",
     "nodemon": "^1.18.5",
@@ -27,6 +28,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.0",
+    "style-loader": "^0.23.1",
     "vue": "^2.5.17",
     "vue-axios": "^2.1.4",
     "vue-router": "^3.0.1",

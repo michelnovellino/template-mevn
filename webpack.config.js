@@ -1,4 +1,3 @@
-const path = require('path');
 const {VueLoaderPlugin} = require('vue-loader');   
 
 module.exports = { 
@@ -14,6 +13,11 @@ module.exports = {
                 loader: 'babel-loader'
             }
         },
+        {
+            test: /\.css$/,
+            use: [ 'style-loader', 'css-loader' ]   //  <=  Order is very important
+          },
+        
         {
             test: /\.vue$/,
             loader: 'vue-loader'

@@ -1,4 +1,4 @@
  <template>
-     <h1>vue component</h1>
+     <h1>vue componeadssdnt</h1>
  </template>
  
