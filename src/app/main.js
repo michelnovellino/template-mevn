@@ -11,7 +11,7 @@ Vue.use(VueRouter);
 
 Vue.use(VueJWT);
 
-import TaskList from './components/taskList.vue';
+import TaskList from './components/tasksList.vue';
 
 
 const routes = [
