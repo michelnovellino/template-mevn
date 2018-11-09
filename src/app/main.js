@@ -1,14 +1,33 @@
 import Vue from 'vue';
-
-import App from './components/App.vue';
-
-//assets
+import VueRouter from "vue-router";
+import VueJWT from 'vuejs-jwt';
+import App from './App.vue';
 
 import 'materialize-css/dist/css/materialize.css'
 import 'materialize-css/dist/js/materialize.js'
 
 
+Vue.use(VueRouter);
 
-new Vue({
-    render: h => h(App)
-}).$mount('#app');
+Vue.use(VueJWT);
+
+import TaskList from './components/taskList.vue';
+
+
+const routes = [
+    { name:'TaskList', path: '/', component: TaskList }
+  ]
+
+
+// configure router
+const router = new VueRouter({
+ mode:'history',
+ routes: routes
+});
+
+//assets
+
+
+new Vue(
+    Vue.util.extend({router},  App)
+).$mount('#app');

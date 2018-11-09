@@ -47,10 +47,10 @@ app.use(express.static(path.join(__dirname,'public')));
 
 
 
-const itemRoute = require('./routes/Item');
-const taskRoute = require('./routes/Task');
-app.use('/task',taskRoute);
-app.use('/item',itemRoute);
+const itemRoute = require('./api/Item');
+const taskRoute = require('./api/Task');
+app.use('api/task',taskRoute);
+app.use('api/item',itemRoute);
 
 //static files
 
