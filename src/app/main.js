@@ -12,10 +12,12 @@ Vue.use(VueRouter);
 Vue.use(VueJWT);
 
 import TaskList from './components/tasksList.vue';
+import UserPanel from './components/userPanel.vue';
 
 
 const routes = [
-    { name:'TaskList', path: '/', component: TaskList }
+    { name:'TaskList', path: '/', component: TaskList },
+    {name:'userPanel', path:'/user', component: UserPanel}
   ]
 
 
